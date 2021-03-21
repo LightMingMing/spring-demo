@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        maven { url = uri("https://maven.aliyun.com/repository/public") }
+        jcenter()
+    }
+}
+
+plugins {
+    id 'groovy-gradle-plugin'
+}
+
+repositories {
+    maven { url = uri("https://maven.aliyun.com/repository/public") }
+    gradlePluginPortal()
+}
