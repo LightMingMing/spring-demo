@@ -1,2 +1,4 @@
 rootProject.name = 'spring-demo'
 include 'bean-lifecycle'
+include 'web'
+
