@@ -1,0 +1,12 @@
+plugins {
+    id 'com.demo.java-application-conventions'
+    id 'org.springframework.boot' version '2.4.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+
+group 'com.demo'
+version '1.0.0'
+
+dependencies {
+    implementation 'org.springframework.kafka:spring-kafka:2.6.7'
+}

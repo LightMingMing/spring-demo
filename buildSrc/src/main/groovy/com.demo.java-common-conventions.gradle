@@ -6,3 +6,8 @@ repositories {
     maven { url = uri("https://maven.aliyun.com/repository/public") }
     jcenter()
 }
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.18'
+    compileOnly 'org.projectlombok:lombok:1.18.18'
+}

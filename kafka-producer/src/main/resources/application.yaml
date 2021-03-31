@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        max:
+          in:
+            flight:
+              requests:
+                per:
+                  connection: 1 # only test
+        linger:
+          ms: 10 # only test
