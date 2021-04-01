@@ -1,0 +1,12 @@
+plugins {
+    id 'com.demo.java-application-conventions'
+    id 'org.springframework.boot' version '2.4.3'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
+group 'com.demo'
+version '1.0.0'
+
+dependencies {
+    implementation 'mysql:mysql-connector-java'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+}

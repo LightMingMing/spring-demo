@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://localhost/demo?createDatabaseIfNotExist=true&serverTimezone=Asia/Shanghai
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.demo.entity
