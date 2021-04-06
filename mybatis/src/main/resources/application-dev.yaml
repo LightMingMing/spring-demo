@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    # 不自动关闭 database, 虚拟机退出时才会关闭
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+  h2:
+    # H2 控制台
+    console:
+      enabled: true
