@@ -4,3 +4,7 @@ include 'web'
 include 'kafka-producer'
 include 'kafka-consumer'
 include 'mybatis'
+include 'cloud-eureka-service-registry'
+include 'cloud-eureka-service-provider'
+include 'cloud-eureka-service-consumer'
+
