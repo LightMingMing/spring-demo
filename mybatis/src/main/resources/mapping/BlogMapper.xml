@@ -13,8 +13,8 @@
         from blog
     </select>
     <insert id="create" parameterType="Blog" useGeneratedKeys="true" keyProperty="id">
-        insert into blog (author, title, content, createTime)
-        values (#{author}, #{title}, #{content}, CURRENT_TIMESTAMP())
+        insert into blog (author, title, content)
+        values (#{author}, #{title}, #{content})
     </insert>
     <delete id="delete">
         delete

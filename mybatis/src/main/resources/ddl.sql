@@ -1,8 +1,8 @@
-create table blog
+create table IF NOT EXISTS blog
 (
     id         int primary key auto_increment,
-    author     varchar(32),
-    title      varchar(64),
-    content    varchar(256),
-    createTime datetime
+    author     varchar(32)  NOT NULL,
+    title      varchar(64)  NOT NULL,
+    content    varchar(256) NOT NULL,
+    createTime datetime     NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

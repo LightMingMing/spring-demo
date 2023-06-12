@@ -4,7 +4,7 @@ spring:
     password:
     driverClassName: org.h2.Driver
     # 不自动关闭 database, 虚拟机退出时才会关闭
-    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;INIT=CREATE TABLE IF NOT EXISTS blog(id int primary key auto_increment, author varchar(32) NOT NULL, title varchar(64) NOT NULL, content varchar(256)  NOT NULL, createTime datetime NOT NULL DEFAULT CURRENT_TIMESTAMP)
   h2:
     # H2 控制台
     console:
